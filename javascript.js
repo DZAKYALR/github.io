@@ -37,10 +37,6 @@ if ( (condt) == 7)
 if ( (condt) == 8)
 {output = "Angka yang anda fikirkan adalah 8";}
 
-
-
-
-
 if ( (condt) == 9)
 {output = "Angka yang anda fikirkan adalah 9";}
 
@@ -64,10 +60,6 @@ if ( (condt) == 15)
 
 if ( (condt) == 16)
 {output = "Angka yang anda fikirkan adalah 16";}
-
-
-
-
 
 if ( (condt) == 17)
 {output = "Angka yang anda fikirkan adalah 17";}
@@ -93,10 +85,6 @@ if ( (condt) == 23)
 if ( (condt) == 24)
 {output = "Angka yang anda fikirkan adalah 24";}
 
-
-
-
-
 if ( (condt) == 25)
 {output = "Angka yang anda fikirkan adalah 25";}
 
@@ -120,10 +108,6 @@ if ( (condt) == 31)
 
 if ( (condt) == 32)
 {output = "Angka yang anda fikirkan adalah 32";}
-
-
-
-
 
 if ( (condt) == 33)
 {output = "Angka yang anda fikirkan adalah 33";}
@@ -149,10 +133,6 @@ if ( (condt) == 39)
 if ( (condt) == 40)
 {output = "Angka yang anda fikirkan adalah 40";}
 
-
-
-
-
 if ( (condt) == 41)
 {output = "Angka yang anda fikirkan adalah 41";}
 
@@ -177,101 +157,17 @@ if ( (condt) == 47)
 if ( (condt) == 48)
 {output = "Angka yang anda fikirkan adalah 48";}
 
-
-
-
-
 if ( (condt) == 49)
 {output = "Angka yang anda fikirkan adalah 49";}
 
 if ( (condt) == 50)
 {output = "Angka yang anda fikirkan adalah 50";}
 
-if ( (condt) == 51)
-{output = "Angka yang anda fikirkan adalah 51";}
-
-if ( (condt) == 52)
-{output = "Angka yang anda fikirkan adalah 52";}
-
-if ( (condt) == 53)
-{output = "Angka yang anda fikirkan adalah 53";}
-
-if ( (condt) == 54)
-{output = "Angka yang anda fikirkan adalah 54";}
-
-if ( (condt) == 55)
-{output = "Angka yang anda fikirkan adalah 55";}
-
-if ( (condt) == 56)
-{output = "Angka yang anda fikirkan adalah 56";}
-
-
-
-
-
-if ( (condt) == 57)
-{output = "Angka yang anda fikirkan adalah 57";}
-
-if ( (condt) == 58)
-{output = "Angka yang anda fikirkan adalah 58";}
-
-if ( (condt) == 59)
-{output = "Angka yang anda fikirkan adalah 59";}
-
-if ( (condt) == 60)
-{output = "Angka yang anda fikirkan adalah 60";}
-
-if ( (condt) == 61)
-{output = "Angka yang anda fikirkan adalah 61";}
-
-if ( (condt) == 62)
-{output = "Angka yang anda fikirkan adalah 62";}
-
-if ( (condt) == 63)
-{output = "Angka yang anda fikirkan adalah 63";}
 
 (document.guicheck.output.value = output);
 
-// // image
-
-// eval("document.img.src=\"" + condt + ".png\"");
-// eval("document.img2.src=\"" + condt + ".png\"");
-// eval("document.img3.src=\"" + condt + ".png\"");
-// eval("document.img4.src=\"" + condt + ".png\"");
-// eval("document.img5.src=\"" + condt + ".png\"");
-// eval("document.img6.src=\"" + condt + ".png\"");
-// eval("document.img7.src=\"" + condt + ".png\"");
-// eval("document.img8.src=\"" + condt + ".png\"");
-
-// eval("document.img9.src=\"" + condt + ".png\"");
-// eval("document.img10.src=\"" + condt + ".png\"");
-// eval("document.img11.src=\"" + condt + ".png\"");
-// eval("document.img12.src=\"" + condt + ".png\"");
-// eval("document.img13.src=\"" + condt + ".png\"");
-// eval("document.img14.src=\"" + condt + ".png\"");
-// eval("document.img15.src=\"" + condt + ".png\"");
-// eval("document.img16.src=\"" + condt + ".png\"");
-
-// eval("document.img17.src=\"" + condt + ".png\"");
-// eval("document.img18.src=\"" + condt + ".png\"");
-// eval("document.img19.src=\"" + condt + ".png\"");
-// eval("document.img20.src=\"" + condt + ".png\"");
-// eval("document.img21.src=\"" + condt + ".png\"");
-// eval("document.img22.src=\"" + condt + ".png\"");
-// eval("document.img23.src=\"" + condt + ".png\"");
-// eval("document.img24.src=\"" + condt + ".png\"");
-
-// eval("document.img25.src=\"" + condt + ".png\"");
-// eval("document.img26.src=\"" + condt + ".png\"");
-// eval("document.img27.src=\"" + condt + ".png\"");
-// eval("document.img28.src=\"" + condt + ".png\"");
-// eval("document.img29.src=\"" + condt + ".png\"");
-// eval("document.img30.src=\"" + condt + ".png\"");
-// eval("document.img31.src=\"" + condt + ".png\"");
-// eval("document.img32.src=\"" + condt + ".png\"");
 		
 }
 
 
 
-//-->
