@@ -1,23 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Skranji:400,700&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  background-color: #3C1652;
+  background-color: #3c1652;
   font-family: "Montserrat", sans-serif;
   margin: 0;
   color: #ffffff;
 }
 
 main {
+  background-color: #b2acf4;
+  color: #000000;
   padding: 20px;
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 aside {
@@ -29,7 +32,7 @@ footer {
 
   padding: 20px;
   color: white;
-  background-color: #3C1652;
+  background-color: #3c1652;
   text-align: center;
 }
 
@@ -38,7 +41,6 @@ header {
   display: inline;
   background: linear-gradient(to bottom, #561241, #3b0527);
 }
-
 
 .article h2 {
   font-size: 24px;
@@ -51,41 +53,41 @@ aside h2 {
 }
 
 .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .wrapper > * {
-    padding: 20px;
-    margin: 10px;
-    flex: 1 100%;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.wrapper > * {
+  padding: 20px;
+  margin: 10px;
+  flex: 1 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
 
 .aside1 {
-  background: #FCCCE4;
+  background: #fccce4;
   color: #fff;
 }
 
 .aside1 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .aside2 {
-  background: #7C3B7A;
+  background: #7c3b7a;
   color: #fff;
 }
 
 .title-head {
   justify-content: center;
   display: flex;
-  background: linear-gradient(to bottom, #561241, #3C1652);
+  background: linear-gradient(to bottom, #561241, #3c1652);
   padding: 25px;
   align-items: center;
   color: #ffb138;
@@ -127,10 +129,16 @@ aside h2 {
   margin-top: 5%;
 }
 
-#profile-avatar {
-    width: 150px;
+#beranda-magician {
+    width: 200px;
     height: auto;
     margin-bottom: 10px;
+  }
+
+#profile-avatar {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 #user-name-input {
@@ -213,12 +221,14 @@ aside h2 {
   }
 }
 
+#beranda-magician {
+  animation: breathe 4s linear infinite alternate;
+  transform-origin: center bottom;
+}
 #profile-avatar {
   animation: breathe 4s linear infinite alternate;
   transform-origin: center bottom;
-
 }
-
 
 @media all and (min-width: 800px) {
   .main {
