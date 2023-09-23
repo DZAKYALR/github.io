@@ -1,11 +1,15 @@
+/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Skranji:400,700&display=swap");
+
+/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body Styles */
 body {
   background-color: #3c1652;
   font-family: "Montserrat", sans-serif;
@@ -13,6 +17,14 @@ body {
   color: #ffffff;
 }
 
+/* Header Styles */
+header {
+  height: 50px;
+  display: inline;
+  background: linear-gradient(to bottom, #561241, #3b0527);
+}
+
+/* Main Content Styles */
 main {
   background-color: #b2acf4;
   color: #000000;
@@ -23,67 +35,21 @@ main {
   justify-content: center;
 }
 
+/* Sidebar Styles */
 aside {
   flex: 1;
 }
 
+/* Footer Styles */
 footer {
   margin-top: 100px;
-
   padding: 20px;
   color: white;
   background-color: #3c1652;
   text-align: center;
 }
 
-header {
-  height: 50px;
-  display: inline;
-  background: linear-gradient(to bottom, #561241, #3b0527);
-}
-
-.article h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-aside h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-}
-
-.wrapper > * {
-  padding: 20px;
-  margin: 10px;
-  flex: 1 100%;
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.aside1 {
-  background: #fccce4;
-  color: #fff;
-}
-
-.aside1 li {
-  list-style-type: none;
-}
-
-.aside2 {
-  background: #7c3b7a;
-  color: #fff;
-}
-
+/* Title Head Styles */
 .title-head {
   justify-content: center;
   display: flex;
@@ -104,14 +70,56 @@ aside h2 {
   margin: 0;
   font-family: "Skranji", serif;
   font-size: 48px;
-  /* text-shadow: 2px 2px 2px #90009f; */
   text-shadow: 2px 2px 2px #ffc49b, 2px 2px 4px #90009f;
 }
 
-.profile header {
-  text-align: center;
+/* Article Heading Styles */
+.article h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
+/* Sidebar Heading Styles */
+aside h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Wrapper Styles */
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.wrapper > * {
+  padding: 20px;
+  margin: 10px;
+  flex: 1 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Aside Styles */
+.aside1 {
+  background: #fccce4;
+  color: #fff;
+}
+
+.aside1 li {
+  list-style-type: none;
+}
+
+.aside2 {
+  background: #7c3b7a;
+  color: #fff;
+}
+
+/* Splash Screen Styles */
 #splash-screen {
   display: none;
   position: fixed;
@@ -129,6 +137,7 @@ aside h2 {
   margin-top: 5%;
 }
 
+/* Image Styles */
 #beranda-magician {
   width: 200px;
   height: auto;
@@ -141,6 +150,7 @@ aside h2 {
   margin-bottom: 10px;
 }
 
+/* Input Styles */
 #user-name-input {
   padding: 10px;
   margin: 10px;
@@ -150,6 +160,7 @@ aside h2 {
   font-size: 16px;
 }
 
+/* Submit Button Styles */
 #submit-name {
   padding: 10px 20px;
   background-color: #3b0527;
@@ -164,6 +175,7 @@ aside h2 {
   background-color: rgba(17, 71, 171, 0.95);
 }
 
+/* Particles Animation Styles */
 .particles {
   position: absolute;
   width: 7px;
@@ -174,6 +186,7 @@ aside h2 {
   animation: float 5s infinite;
 }
 
+/* Star Particle Styles */
 .particles.star {
   width: 10px;
   height: 10px;
@@ -194,6 +207,7 @@ aside h2 {
   }
 }
 
+/* Magician Animation Styles */
 #magician {
   animation: breathe 2s infinite alternate;
   transform-origin: center bottom;
@@ -208,6 +222,7 @@ aside h2 {
   }
 }
 
+/* Magic Text Animation Styles */
 #magic-text {
   animation: magicText 4s linear infinite alternate;
 }
@@ -221,27 +236,30 @@ aside h2 {
   }
 }
 
-#beranda-magician {
-  animation: breathe 4s linear infinite alternate;
-  transform-origin: center bottom;
-}
+/* Magician and Avatar Animation Styles */
+#beranda-magician,
 #profile-avatar {
   animation: breathe 4s linear infinite alternate;
   transform-origin: center bottom;
 }
 
+/* Magician Image Styles */
 .magician-img {
   width: 200px;
   height: auto;
   animation: breathe 4s linear infinite alternate;
   transform-origin: center bottom;
 }
+
+/* Answer Image Styles */
 .answer-img {
   width: 300px;
   height: auto;
   animation: breathe 2s linear infinite alternate;
   transform-origin: center bottom;
 }
+
+/* Answer Text Styles */
 .answer-text {
   color: #ffb138;
   margin: 20px;
@@ -250,10 +268,12 @@ aside h2 {
   text-shadow: 2px 2px 2px #1b0d03, 2px 2px 4px #90009f;
 }
 
+/* Next Button Styles */
 .next-button {
   margin-top: 20px;
 }
 
+/* Yes Button Styles */
 .button-yes {
   background-color: rgb(15, 131, 15);
   color: white;
@@ -267,6 +287,7 @@ aside h2 {
   cursor: pointer;
 }
 
+/* No Button Styles */
 .button-no {
   background-color: rgb(157, 16, 16);
   color: white;
@@ -279,6 +300,7 @@ aside h2 {
   cursor: pointer;
 }
 
+/* Start Button Styles */
 .start-button {
   margin-top: 20px;
   justify-content: center;
@@ -287,28 +309,11 @@ aside h2 {
   height: 50px;
   background: #fff;
   border-radius: 10px;
+  cursor: pointer;
+}
 
-  &:hover {
-    animation: burn 2s infinite;
-    cursor: pointer;
-    &::before {
-      position: absolute;
-      width: 100px;
-      height: 40px;
-      background: #50fdfd;
-      border-radius: 100%;
-      animation: flare 2s infinite;
-    }
-    &::after {
-      position: absolute;
-      right: 40px;
-      width: 100px;
-      height: 40px;
-      background: #50fdfd;
-      border-radius: 100%;
-      animation: flare 2s infinite;
-    }
-  }
+.start-button:hover {
+  animation: burn 2s infinite;
 }
 
 @keyframes flare {
@@ -325,7 +330,6 @@ aside h2 {
     background: #50fdfd;
     box-shadow: 0 0 5px 0 #407ebf, 0 0 5px 0 #50fdfd, 0 0 5px 0 #50fdfd;
   }
-
   100% {
     color: rgba(0, 0, 0, 1);
     background: rgba(255, 255, 255, 1);
@@ -335,6 +339,7 @@ aside h2 {
   }
 }
 
+/* Chip Styles */
 .chip {
   display: flex;
   flex-wrap: wrap;
@@ -353,23 +358,20 @@ aside h2 {
   border-radius: 5px;
 }
 
+/* Media Queries */
 @media all and (min-width: 800px) {
   .main {
     flex: 3;
   }
-
   .aside1 {
     order: 1;
   }
-
   .aside2 {
     order: 2;
   }
-
   .main {
     order: 2;
   }
-
   .footer {
     order: 4;
   }
