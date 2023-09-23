@@ -4,7 +4,8 @@ let totalAttempts = localStorage.getItem("totalAttempts");
 const splashScreen = document.getElementById("splash-screen");
 const userNameInput = document.getElementById("user-name-input");
 const submitButton = document.getElementById("submit-name");
-const backgroundMusic = new Audio("../assets/bgm/sgm.mp3");
+const audioFile = "assets/bgm/sgm.mp3";
+const backgroundMusic = new Audio(audioFile);
 const userName = localStorage.getItem("userName");
 const savedName = localStorage.getItem("userName");
 
@@ -62,6 +63,17 @@ function createParticle(isStar = false) {
   header.appendChild(particle);
 }
 
+function showInitialArticle() {
+  currentIndex =0;
+  showArticle(currentIndex);
+  startButton.disabled = false;
+}
+userNameInput.addEventListener("keyup", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault(); 
+    submitButton.click();
+  }
+});
 submitButton.addEventListener("touchstart", function () {
   if (userName) {
     localStorage.setItem("userName", userName);
@@ -187,14 +199,14 @@ function showArticle(index) {
       totalAttempts = (+totalAttempts || 0) + 1;
       saveToLocalStorage("correctGuesses", correctGuesses);
       saveToLocalStorage("totalAttempts", totalAttempts);
-      location.reload();
+      location.reload()
     });
     startAgainButtonY.addEventListener("touchstart", function () {
       correctGuesses = (+correctGuesses || 0) + 1;
       totalAttempts = (+totalAttempts || 0) + 1;
       saveToLocalStorage("correctGuesses", correctGuesses);
       saveToLocalStorage("totalAttempts", totalAttempts);
-      location.reload();
+      location.reload()
     });
     
     const startAgainButtonN = document.createElement("button");
@@ -205,14 +217,14 @@ function showArticle(index) {
       totalAttempts = (+totalAttempts || 0) + 1;
       saveToLocalStorage("incorrectGuess", +incorrectGuess);
       saveToLocalStorage("totalAttempts", +totalAttempts);
-      location.reload();
+      location.reload()
     });
     startAgainButtonN.addEventListener("touchstart", function () {
       incorrectGuess = (+incorrectGuess || 0) + 1;
       totalAttempts = (+totalAttempts || 0) + 1;
       saveToLocalStorage("incorrectGuess", +incorrectGuess);
       saveToLocalStorage("totalAttempts", +totalAttempts);
-      location.reload();
+      location.reload()
     });
     
     articleContainer.appendChild(answerImg);
@@ -264,3 +276,26 @@ startButton.addEventListener("click", function () {
   const berandaElementPosition = berandaElement.getBoundingClientRect().top;
   window.scrollBy(0, berandaElementPosition - 40);
 });
+
+const dropdownButton = document.getElementById("dropdown-button");
+const dropdownContent = document.getElementById("myDropdown");
+
+dropdownButton.addEventListener("click", function() {
+  if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+  } else {
+    dropdownContent.style.display = "block";
+  }
+});
+
+document.addEventListener("click", function(event) {
+  if (!event.target.matches("#dropdown-button")) {
+    dropdownContent.style.display = "none";
+  }
+});
+
+document.getElementById("logout").addEventListener("click", function() {
+  localStorage.clear()
+  location.reload()
+});
+
