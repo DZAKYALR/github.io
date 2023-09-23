@@ -1,144 +1,69 @@
-<html>
-    <head>
-        <title>Number Game</title>
-        
-    </head>
-    
-<script type="text/javascript" src="javascript.js"></script>
-<link href="style.css" rel="stylesheet" />
-<form method="post" name="guicheck" >
-  
-    <div class="image-container">
-        <img src="intro.jpg" >
-    </div>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br>
-    <br>
-    <div class="image-container" id= "1">
-        <img src="1.jpg" >
-    </div>
-    <div style="position:relative;right:-100%; top:10px">
-    <label class="container">
-    <input type="checkbox" name="Item1" value="Item1_chosen" onclick="tally()">
-    <span class="checkmark"></span>
-    
-
-    </label>
-    </div>
-    <input type="button" onClick="document.getElementById('1').scrollIntoView();" />
-    
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br>
-    <div class="image-container" id="2">
-        <img src="2.jpg" >
-    </div>
-    <div style="position:relative;right:-100%; top:10px">
-    <label class="container">
-    <input type="checkbox" name="Item2" value="Item2_chosen" onclick="tally()">
-    <span class="checkmark"></span>
-    </label>
-    </div>
-    
-    
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br>
-    <div class="image-container" id="3">
-        <img src="3.jpg" >
-    </div>
-    <div style="position:relative;right:-100%; top:10px">
-    <label class="container">
-    <input type="checkbox" name="Item3" value="Item3_chosen" onclick="tally()">
-    <span class="checkmark"></span>
-    </label>
-    </div>
-    
-    
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br>
-    <div class="image-container" id="3">
-        <img src="4.jpg" >
-    </div>
-    <div style="position:relative;right:-100%; top:10px">
-    <label class="container">
-    <input type="checkbox" name="Item4" value="Item4_chosen" onclick="tally()">
-    <span class="checkmark"></span>
-    </label>
-    </div>
-    
-    
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br>
-  
-    <div class="image-container" id="4">
-        <img src="5.jpg" >
-    </div>
-    <div style="position:relative;right:-100%; top:10px">
-    <label class="container">
-    <input type="checkbox" name="Item5" value="Item5_chosen" onclick="tally()">
-    <span class="checkmark"></span>
-    </label>
-    </div>
-    
-    
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br>
-  
-    <div class="image-container" id="6">
-        <img src="6.jpg" >
-    </div>
-    <div style="position:relative;right:-100%; top:10px">
-    <label class="container">
-    <input type="checkbox" name="Item6" value="Item6_chosen" onclick="tally()">
-    <span class="checkmark"></span>
-    </label>
-    </div>
-    
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br>
-    <div class="image-container" id="7">
-        <img src="out.jpg" >
-    </div>
-    <div style="position:relative;right:-70%; top:-370;">
-        <textarea name="output" rows="2" cols="35"type="text" style="font-size: xxx-large;"></textarea>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic Number</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <style></style>
+  </head>
+  <body>
+    <div id="splash-screen">
+      <img src="assets/images/magician.png" alt="Magician" id="splash-image" />
+      <p>Siapa nama kamu?</p>
+      <input type="text" id="user-name-input" />
+      <button id="submit-name">Simpan</button>
     </div>
 
-    
-    <br><br>
-    
-    </div></form>
+    <header>
+      <div class="title-head">
+        <img src="assets/images/magician.png" alt="Magician" id="magician" />
+        <h1 id="magic-text">Magic Number</h1>
+      </div>
+    </header>
+    <div class="wrapper">
+      <main class="main">
+        <article id="beranda" class="article">
+          <h2>Selamat Datang di Wisata Alam Indonesia</h2>
+          <p>
+            Selamat datang di situs web kami yang mengulas destinasi wisata alam
+            yang menakjubkan di seluruh Indonesia. Temukan keindahan alam luar
+            biasa dan petualangan tak terlupakan di setiap sudut negeri ini.
+          </p>
+        </article>
+        <article id="destinasi" class="article">
+          <h2>Destinasi Wisata Alam</h2>
+          <p>
+            Terletak di lereng pegunungan, destinasi wisata ini menawarkan
+            keindahan alam yang memukau. Dengan hutan lebat, air terjun yang
+            menakjubkan, dan pemandangan yang spektakuler, ini adalah tempat
+            yang sempurna bagi para pencinta alam.
+          </p>
+          <p>
+            Jika Anda mencari petualangan, Anda bisa menjelajahi trekking di
+            sekitar area ini dan menikmati pemandangan yang menakjubkan
+            sepanjang perjalanan.
+          </p>
+        </article>
+      </main>
+
+      <aside class="aside aside1">
+        <h2>Statistik</h2>
+        <ul id="statistik-list"></ul>
+      </aside>
+      <aside class="aside aside2">
+        <h2>Profil</h2>
+        <div id="profile">
+          <img alt="Avatar" id="profile-avatar" />
+          <p id="profile-name">Nama Penulis: Tidak Tersedia</p>
+        </div>
+      </aside>
+    </div>
+    <footer>
+      <p>&copy;2023 Dzaky Al Ridho</p>
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+  </body>
 </html>
