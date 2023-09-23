@@ -7,7 +7,7 @@
   }
 
 body {
-  background-color: white;
+  background-color: #3C1652;
   font-family: "Montserrat", sans-serif;
   margin: 0;
   color: #ffffff;
@@ -29,7 +29,7 @@ footer {
 
   padding: 20px;
   color: white;
-  background-color: #1e1e1e;
+  background-color: #3C1652;
   text-align: center;
 }
 
@@ -85,7 +85,7 @@ aside h2 {
 .title-head {
   justify-content: center;
   display: flex;
-  background: linear-gradient(to bottom, #561241, #3b0527);
+  background: linear-gradient(to bottom, #561241, #3C1652);
   padding: 25px;
   align-items: center;
   color: #ffb138;
@@ -212,6 +212,13 @@ aside h2 {
     transform: scale(1.05);
   }
 }
+
+#profile-avatar {
+  animation: breathe 4s linear infinite alternate;
+  transform-origin: center bottom;
+
+}
+
 
 @media all and (min-width: 800px) {
   .main {
